@@ -10,7 +10,7 @@ dotenv.config({ path: "./config.env" });
 
 app.use(
   cors({
-    origin: "https://amritamlatur.netlify.app/", // ✅ CORS fixed
+    origin: "https://amritamlatur.netlify.app", // ✅ CORS fixed
     methods: ["POST"],
     credentials: true,
   })
