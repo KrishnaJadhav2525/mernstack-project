@@ -19,7 +19,7 @@ app.use(
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use("https://mernstack-p8ts.onrender.com", reservationRouter);
+app.use("https://mernstack-p8ts.onrender.com/api/v1/reservation", reservationRouter);
 
 app.get("/", (req, res, next) => {
   return res.status(200).json({
